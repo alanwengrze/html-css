@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf);
+}
+*{
+    margin: 0;
+}
+
+:root{
+    --cor1:#CCEA8D;
+    --cor2:#A6BC09;
+    --cor3:#019587;
+    --cor4:#005148;
+    --cor5:#01415B;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:var(--cor4);
+    text-align: justify;
+}
+header{
+    min-height: 150px;
+    padding-top:1px;
+    background-image: url(imagens/android-topo.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 200px;
+}
+header > h1{
+    padding-top: 40px;
+    font: normal bold 3em sans-serif; 
+    text-align:center;
+    color: #01415B;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.205);
+}
+header > p{
+    font: lighter 1.2em sans-serif;
+    max-width: 600px;
+    text-align:center;
+    margin: auto;
+    color: #01415B;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.219);
+}
+nav{
+    background-color: #A6BC09;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+}
+nav > a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition-duration: 0.6s;
+}
+nav > a:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+main{
+    margin: 0 auto;
+    background-color: #fff;
+    min-width: 320px;
+    max-width: 1000px;
+    padding: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.404);
+}
+strong, a{
+    color: #005148;
+    font-weight: bold;
+    text-decoration: none;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+article > h1{
+    font-family: android;
+    color: #01415B;
+}
+article > h2{
+    font-family: android;
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, #01415B, transparent);
+    padding: 0px 5px 0px 5px;
+    color: #CCEA8D;
+}
+.imagem{
+    width:100%;
+    display:block;
+    margin:0 auto;
+}
+#android{
+    margin:0 auto;
+    display:block;
+}
+#video{
+    padding: 20px;
+    background-color:var(--cor5);
+    margin: 0px -15px; /*essa configuração faz com que a margem vá para fora, cobrindo a parte da main.*/
+}
+iframe{
+    display: block;
+    width: 100%;
+}
+
+article{
+    text-align:justify;
+}
+article > p{
+    padding:15px 0px;
+    text-indent: 30px;
+    line-height:2em; /*da um espaço entre as linhas do parágrafo*/
+}
+
+aside{
+    padding: 10px;
+    border-radius:10px;
+    margin-top: 20px;
+    background-color:var(--cor3);
+    color:#fff;
+    line-height:1.5em;
+}
+aside > h3{
+    background-color: var(--cor2);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius:10px 10px 0px 0px ;
+}
+ul{
+    columns: 2;
+    line-height:normal;
+}
+footer{
+    font-size: 0.8em;
+    color: #fff;
+    background-color: #A6BC09;
+    margin: 0 auto;
+    padding:2px;
+    text-align: center;
+}
+footer > p{
+    margin: 0 auto;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: #fff;
+}

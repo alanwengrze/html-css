@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face {
+    font-family: 'fonte';
+    src: url('fontes/Brand New Retro.otf');
+}
+
+h1{
+    font: 3em 'fonte';
+    text-align: center;
+}
+p{
+    font: italic normal 1em sans-serif;
+    background-image: linear-gradient(to bottom right,#012E40, #038C8C, #F28705);
+}
